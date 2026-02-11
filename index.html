@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For You 💗</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding-top: 100px;
+    }
+    h1 {
+      color: white;
+      font-size: 28px;
+    }
+    button {
+      font-size: 50px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    button:hover {
+      transform: scale(1.3);
+    }
+    video {
+      margin-top: 20px;
+      width: 320px;
+      display: none;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>I have one thing for you 💗</h1>
+  <button onclick="playVideo()">❤️</button>
+
+  <video id="myVideo" controls>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+
+  <script>
+    function playVideo() {
+      var video = document.getElementById("myVideo");
+      video.style.display = "block";
+      video.play();
+    }
+  </script>
+
+</body>
+</html>
